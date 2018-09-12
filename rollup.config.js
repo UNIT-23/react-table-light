@@ -24,14 +24,18 @@ export default {
   plugins: [
     external(),
     postcss({
-      modules: true
+      plugins: []
     }),
     url(),
     babel({
       exclude: 'node_modules/**',
       plugins: [ 'external-helpers' ]
     }),
-    resolve(),
+    resolve(
+      {
+        preferBuiltins: false
+      }
+    ),
     commonjs()
   ]
 }

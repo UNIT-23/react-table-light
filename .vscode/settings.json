@@ -1,0 +1,22 @@
+{
+  "eslint.enable": true,
+  "eslint.workingDirectories": [
+    "./src", "./*"
+  ],
+  "eslint.validate": [
+    "javascript",
+    "html",
+    {
+      "language": "javascriptreact",
+      "autoFix": true
+    },
+    {
+      "language": "vue",
+      "autoFix": true
+    }
+  ],
+  "editor.rulers": [
+    80
+  ],
+  "eslint.autoFixOnSave": true
+}

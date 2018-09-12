@@ -2,9 +2,13 @@
   "name": "react-table-light",
   "version": "1.0.0",
   "description": "A simple light weight react table with many features",
-  "author": "mohsin51",
+  "author": "Mohsin Amjad",
   "license": "MIT",
-  "repository": "mohsin51/react-table-light",
+  "homepage": "https://github.com/UNIT-23/react-table-light",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/UNIT-23/react-table-light"
+  },
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
@@ -20,6 +24,9 @@
     "prepare": "npm run build",
     "predeploy": "cd example && npm install && npm run build",
     "deploy": "gh-pages -d example/build"
+  },
+  "dependencies": {
+    "history": "^4.7.2"
   },
   "peerDependencies": {
     "prop-types": "^15.5.4",
